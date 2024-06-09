@@ -3,11 +3,6 @@ body {
     margin: 20px;
 }
 
-.tabs-container {
-    width: 60%;
-    margin: 0 auto;
-}
-
 .tabs {
     display: flex;
     list-style: none;
@@ -26,12 +21,6 @@ body {
 
 .tab:hover {
     background-color: #ddd;
-}
-
-.tab-content {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ddd;
 }
 
 #tab1:checked ~ #content1,

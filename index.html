@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Document</title>
@@ -14,7 +15,7 @@
         }
 
         .tabs-container {
-            width: 60%;
+            width: 50%;
             margin: 0 auto;
         }
 
@@ -44,42 +45,58 @@
             border: 1px solid #ddd;
         }
 
-        #tab1:checked ~ #content1,
-        #tab2:checked ~ #content2,
-        #tab3:checked ~ #content3 {
+        #tab1:checked~#content1,
+        #tab2:checked~#content2,
+        #tab3:checked~#content3 {
             display: block;
         }
     </style>
 </head>
+
 <body>
-<h1>Вкладки</h1>
+    <h1>Вкладки</h1>
+    <span style="position: fixed; bottom: 0%; color: chartreuse;">
+        Лабораторна робота №2
+    </span>
+    <div class="tabs-container">
+        <input type="radio" id="tab1" class="tab" name="tabs" checked>
+        <input type="radio" id="tab2" class="tab" name="tabs">
+        <input type="radio" id="tab3" class="tab" name="tabs">
 
-<div class="tabs-container">
-    <input type="radio" id="tab1" class="tab" name="tabs" checked>
-    <input type="radio" id="tab2" class="tab" name="tabs">
-    <input type="radio" id="tab3" class="tab" name="tabs">
+        <ul class="tabs">
+            <label for="tab1" class="tab">Вкладка 1</label>
+            <label for="tab2" class="tab">Вкладка 2</label>
+            <label for="tab3" class="tab">Вкладка 3</label>
+        </ul>
 
-    <ul class="tabs">
-        <label for="tab1" class="tab">Вкладка 1</label>
-        <label for="tab2" class="tab">Вкладка 2</label>
-        <label for="tab3" class="tab">Вкладка 3</label>
-    </ul>
+        <div id="content1" class="tab-content">
+            <h2>Вміст вкладки 1</h2>
+            <img src="map.png" alt="Map" style="float: left; margin-right: 20px;">
+            <p>Украї́на — держава, розташована у Східній та частково у Центральній
+                Європі, охоплює південний захід Східноєвропейської рівнини, частину Східних Карпат і Кримські гори.
+                Межує з Румунією і Молдовою на південному заході, з Угорщиною, Словаччиною та Польщею на заході, з
+                Білоруссю на півночі та з Росією на сході й північному сході. На півдні омивається Чорним та Азовським
+                морями. Площа становить 603 700 км²[7]. Найбільша за площею країна серед повністю розташованих у
+                Європі[8].
+                Станом на останній перепис (2001), населення України становило 48,4 мільйона осіб[9]. Основне й корінне
+                населення України — це українці[10][11] (77,8 % населення на 2001 рік[9]). Також офіційно корінними
+                народами України є кримські татари, караїми та кримчаки[12]. Крім того, значною меншиною є росіяни (17,3
+                % населення на 2001 рік[9]). Історично однією з найбільших меншин в Україні були також українські
+                євреї.[13]
+            </p>
+        </div>
 
-    <div id="content1" class="tab-content">
-        <h2>Вміст вкладки 1</h2>
-        <p>Це вміст першої вкладки.</p>
+        <div id="content2" class="tab-content">
+            <h2>Вміст вкладки 2</h2>
+            <p>Це вміст другої вкладки.</p>
+        </div>
+
+        <div id="content3" class="tab-content">
+            <h2>Вміст вкладки 3</h2>
+            <p>Це вміст третьої вкладки.</p>
+        </div>
     </div>
-
-    <div id="content2" class="tab-content">
-        <h2>Вміст вкладки 2</h2>
-        <p>Це вміст другої вкладки.</p>
-    </div>
-
-    <div id="content3" class="tab-content">
-        <h2>Вміст вкладки 3</h2>
-        <p>Це вміст третьої вкладки.</p>
-    </div>
-</div>
 
 </body>
+
 </html>
